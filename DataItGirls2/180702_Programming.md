@@ -1,4 +1,5 @@
 # Programming Intro
+
 ## R for Data Science
  Hadley Wickham이 정의한 전형적인 데이터 과학의 모습은 아래와 같다.
   * Import : 데이터를 구하고 가져온다.
@@ -12,3 +13,7 @@
     - Transform, Visualize, Model의 단계를 반복
     - EDA : 탐색적 데이터 분석 => 좋은 질문을 뽑아내기 위함
   * Communicate : 이해한 내용을 다른 이들에게 알린다.
+  
+## 현업에서의 문제
+ * 데이터 분석 팀에서는 통계학 전공자가 많은데, 프로그래밍을 모르거나 R을 다루는 정도가 전부
+ * 데이터 분석과 프로그래밍이 가능한 사람이 최적의 요건을 갖추었다고 볼 수 

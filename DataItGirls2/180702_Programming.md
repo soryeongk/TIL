@@ -7,7 +7,5 @@
   * Transform : 데이터를 변환한다. (원하는 데이터만 추려내거나, 기존 데이터에서 새로운 데이터를 만들거나, 통계량을 추출함)
   * Visualize : 데이터를 여러가지 시각적 방법으로 표현하고 살펴본다.
   * Model : 내가 가지고 있는 데이터로부터 좀 더 일반적인 규칙을 찾아냄
-    => Transform, Visualize, Model의 단계를 반복
+    => Transform, Visualize, Model의 단계를 반복 (EDA:탐색적 데이터 분석 => 좋은 질문을 뽑아내기 위함)
   * Communicate : 이해한 내용을 다른 이들에게 알린다.
-
-## 

@@ -57,6 +57,7 @@ print(briefs)
 x의 다음 형제는 y가 아니라 빈 텍스트. 따라서 y를 가리키기 위해서는 다음 다음 형제를 가져와야 함
 
 ```
-<div class='x'>A</div><div class='y'>B</div>```
+<div class='x'>A</div><div class='y'>B</div>
+```
 
 이렇게 열고 닫는 명령 사이에 공백이 없을 때는 다음 형제를 가져오면 y를 가리킴

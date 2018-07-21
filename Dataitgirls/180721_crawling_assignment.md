@@ -52,7 +52,8 @@ print(briefs)
 <div>
     <div class='x'>A</div>
     <div class='y'>B</div>
-</div>```
+</div>
+```
 
 x의 다음 형제는 y가 아니라 빈 텍스트. 따라서 y를 가리키기 위해서는 다음 다음 형제를 가져와야 함
 

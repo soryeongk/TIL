@@ -479,7 +479,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](output_19_0.png)
+![png](./Photo/output_19_0.png)
 
 
 
@@ -502,7 +502,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](output_20_0.png)
+![png](./Photo/output_20_0.png)
 
 
 
@@ -525,7 +525,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](output_21_0.png)
+![png](./Photo/output_21_0.png)
 
 
 
@@ -547,7 +547,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](output_22_0.png)
+![png](./Photo/output_22_0.png)
 
 
 
@@ -568,7 +568,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](output_23_0.png)
+![png](./Photo/output_23_0.png)
 
 
 
@@ -590,7 +590,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](output_24_0.png)
+![png](./Photo/output_24_0.png)
 
 
 
@@ -611,7 +611,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](output_25_0.png)
+![png](./Photo/output_25_0.png)
 
 
 
@@ -632,7 +632,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](output_26_0.png)
+![png](./Photo/output_26_0.png)
 
 
 
@@ -653,7 +653,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](output_27_0.png)
+![png](./Photo/output_27_0.png)
 
 
 
@@ -676,7 +676,7 @@ aversion_votes_1000 = aversion.loc[aversion['votes'] < 1000]
 ```
 
 
-![png](output_28_0.png)
+![png](./Photo/output_28_0.png)
 
 
 

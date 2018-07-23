@@ -547,7 +547,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](./Photo/output_22_0.png)
+![png](./Photo/0722_카테고리별답변대상청원.png)
 
 
 
@@ -568,7 +568,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](./Photo/output_23_0.png)
+![png](./Photo/0722_카테고리별답변대상청원2.png)
 
 
 
@@ -590,7 +590,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](./Photo/output_24_0.png)
+![png](./Photo/0722_연도별청원수.png)
 
 
 
@@ -611,7 +611,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](./Photo/output_25_0.png)
+![png](./Photo/0722_월별청원수.png)
 
 
 
@@ -632,7 +632,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](./Photo/output_26_0.png)
+![png](./Photo/0722_요일별청원수.png)
 
 
 
@@ -653,7 +653,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](./Photo/output_27_0.png)
+![png](./Photo/0722_요일별청원.png)
 
 
 
@@ -676,7 +676,7 @@ aversion_votes_1000 = aversion.loc[aversion['votes'] < 1000]
 ```
 
 
-![png](./Photo/output_28_0.png)
+![png](./Photo/0722_요일별청원2.png)
 
 
 

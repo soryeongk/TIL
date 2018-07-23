@@ -479,7 +479,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](./Photo/output_19_0.png)
+![png](./Photo/0722_카테고리별청원수.png)
 
 
 
@@ -502,7 +502,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](./Photo/output_20_0.png)
+![png](./Photo/0722_카테고리별투표수.png)
 
 
 
@@ -525,7 +525,7 @@ aversion['start_wdn'].value_counts()
 ```
 
 
-![png](./Photo/output_21_0.png)
+![png](./Photo/0722_카테고리별투표수2.png)
 
 
 

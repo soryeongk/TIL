@@ -2432,5 +2432,5 @@ plt.show()
 ```
 
 
-![png](output_53_0.png)
+![png](./Photo/0723_워드투벡터.png)
 

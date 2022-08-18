@@ -170,7 +170,7 @@ export default callViewCartPageEvent;
 1. 이벤트를 제대로 설계하기 위한 것이므로 불필요하지 않습니다.
 2. 이벤트를 제대로 설계하고 유지보수를 쉽게 하기 위해 서버 요청을 한 번 더 보내는 것은 꽤나 가성비가 좋습니다. 큰 부하가 되지 않는다고 판단됩니다.
 
-## 2. 비즈니스 로직에 의존하는 이벤트들이 너무 흩어져있습니다.
+### 2. 비즈니스 로직에 의존하는 이벤트들이 너무 흩어져있습니다.
 
 필요할 때마다 해당 이벤트 함수를 호출하는 것은 중복된 코드를 양산합니다.
 
@@ -192,3 +192,48 @@ export default callViewCartPageEvent;
 2. 분리된 로직의 addItems라는 식의 함수 내에 이벤트를 심어둔다.
 
 이렇게 되면 어떤 뷰가 추가되건, `addItems`라는 동작이 실행되면 자동으로 `callAddCartItemEvent`를 실행하므로 매번 중복된 코드를 추가할 필요가 없어집니다.
+
+## 이벤트 버스(eventBus)를 사용해보면 어떨까?
+
+> 이 부분은 아직 전원 합의된 내용은 아닙니다.
+
+이벤트를 심는 것에 있어 "어떤 데이터를 보내는가"만큼 중요한 것은 "이벤트 호출 시점"입니다.
+
+이벤트 버스(eventBus)에 내가 가진 이벤트를 등록했다가, 필요한 시점이 되면 이벤트 버스에서 해당 이벤트를 불러다 트리거하는 것입니다.
+
+이렇게 되면 이벤트를 호출하는 시점에 eventBus에 대한 접근과 관리에만 집중하면 되기 때문에 유지보수가 더욱 편해질 수 있을 것입니다.
+
+대략적인 코드는 다음과 같습니다 - 코드 작성자 승수님 [@SeungsuKim](https://github.com/SeungsuKim)
+
+```typescript
+// 이벤트 정의
+class Event {
+  blah;
+}
+
+class ViewCartPageEvent extends Event {
+  userId: string;
+  
+  constructor(data: { userId: string }) {
+    this.userId = data.userId;
+  }
+}
+
+// 이벤트 함수 정의 및 이벤트 버스에 등록
+
+const callViewCartPageEvent = () => {
+  ...
+};
+
+eventBus.register(ViewCartPageEvent, callViewCartPageEvent);
+
+// 이벤트 트리거할 페이지에서 호출
+const CartPage = (props: CartPageProps) => {
+  useEffect(() => {
+    const viewCartPageEvent = new ViewCartPageEvent({ userId });
+    
+    eventBus.publish(viewCartPageEvent);
+  }, []);
+  ...
+}
+```
